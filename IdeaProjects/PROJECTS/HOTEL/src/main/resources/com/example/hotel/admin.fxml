@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="621.0" prefWidth="1030.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hotel.AdminController">
+   <children>
+      <Label layoutX="89.0" layoutY="7.0" text="Hotel" textFill="#402e2e">
+         <font>
+            <Font name="Ink Free" size="18.0" />
+         </font></Label>
+      <Label layoutX="311.0" layoutY="7.0" text="Room" textFill="#382a2a">
+         <font>
+            <Font name="Ink Free" size="18.0" />
+         </font></Label>
+      <Label layoutX="503.0" layoutY="7.0" text="Reservation" textFill="#382626">
+         <font>
+            <Font name="Ink Free" size="18.0" />
+         </font></Label>
+      <Label layoutX="252.0" layoutY="76.0" text="cost" />
+      <Label layoutX="235.0" layoutY="107.0" text="available" />
+      <TextField fx:id="Roomcost" layoutX="307.0" layoutY="72.0" prefHeight="26.0" prefWidth="70.0" />
+      <TextField fx:id="Roomavailbal" layoutX="307.0" layoutY="102.0" prefHeight="26.0" prefWidth="70.0" />
+      <Button fx:id="insert2" layoutX="243.0" layoutY="201.0" mnemonicParsing="false" onAction="#insert2" prefHeight="34.0" prefWidth="58.0" text="insert">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font></Button>
+      <Button fx:id="update2" layoutX="300.0" layoutY="201.0" mnemonicParsing="false" onAction="#update2" prefHeight="34.0" prefWidth="62.0" text="update">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font></Button>
+      <Button fx:id="delete2" layoutX="363.0" layoutY="201.0" mnemonicParsing="false" onAction="#delete2" prefHeight="34.0" prefWidth="58.0" text="delete">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font></Button>
+      <Button fx:id="insert1" layoutX="20.0" layoutY="200.0" mnemonicParsing="false" onAction="#insert1" prefHeight="34.0" prefWidth="58.0" text="insert">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font></Button>
+      <Button fx:id="update1" layoutX="78.0" layoutY="201.0" mnemonicParsing="false" onAction="#update1" prefHeight="34.0" prefWidth="62.0" text="update">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font></Button>
+      <Button fx:id="delete1" layoutX="141.0" layoutY="201.0" mnemonicParsing="false" onAction="#delete1" prefHeight="34.0" prefWidth="62.0" text="delete">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font></Button>
+      <Button fx:id="insert3" layoutX="459.0" layoutY="201.0" mnemonicParsing="false" onAction="#insert3" prefHeight="34.0" prefWidth="58.0" text="insert">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font></Button>
+      <Button fx:id="update3" layoutX="518.0" layoutY="201.0" mnemonicParsing="false" onAction="#update3" prefHeight="34.0" prefWidth="70.0" text="update">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font></Button>
+      <Button fx:id="delete3" layoutX="588.0" layoutY="201.0" mnemonicParsing="false" onAction="#delete3" prefHeight="34.0" prefWidth="58.0" text="delete">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font></Button>
+      <Label layoutX="33.0" layoutY="79.0" text="name" />
+      <Label layoutX="26.0" layoutY="107.0" text="room_id" />
+      <Label layoutX="27.0" layoutY="135.0" text="country" />
+      <TextField fx:id="hotelname" layoutX="76.0" layoutY="72.0" prefHeight="26.0" prefWidth="78.0" />
+      <TextField fx:id="hotelroom_id" layoutX="75.0" layoutY="101.0" prefHeight="26.0" prefWidth="80.0" />
+      <TextField fx:id="Hotlecountry" layoutX="75.0" layoutY="131.0" prefHeight="26.0" prefWidth="80.0" />
+      <Label layoutX="445.0" layoutY="76.0" text="hotel_id" />
+      <Label layoutX="450.0" layoutY="107.0" text="room_id" />
+      <Label layoutX="445.0" layoutY="135.0" text="startDay" />
+      <Label layoutX="445.0" layoutY="162.0" text="endDaY" />
+      <TextField fx:id="ResHotel_id" layoutX="524.0" layoutY="72.0" prefHeight="26.0" prefWidth="70.0" />
+      <TextField fx:id="Res_room_id" layoutX="524.0" layoutY="102.0" prefHeight="26.0" prefWidth="70.0" />
+      <TextField fx:id="Res_start" layoutX="524.0" layoutY="131.0" prefHeight="18.0" prefWidth="70.0" />
+      <TextField fx:id="Res_End" layoutX="524.0" layoutY="158.0" prefHeight="26.0" prefWidth="70.0" />
+      <TableView fx:id="TableView1" layoutX="19.0" layoutY="241.0" prefHeight="138.0" prefWidth="222.0">
+        <columns>
+           <TableColumn fx:id="idColumn" prefWidth="51.19997787475586" text="hotel_id" />
+           <TableColumn fx:id="nameColumn" prefWidth="48.0" text="name" />
+           <TableColumn fx:id="roomColumn" prefWidth="54.20001220703125" text="room_id" />
+           <TableColumn fx:id="countryColumn" prefWidth="66.20001220703125" text="country" />
+        </columns>
+      </TableView>
+      <Button fx:id="Show" layoutX="74.0" layoutY="394.0" mnemonicParsing="false" onAction="#showInfo" text="Show Hotels">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font></Button>
+      <Label layoutX="241.0" layoutY="48.0" text="room_id" />
+      <Label fx:id="Reservation_id" layoutX="435.0" layoutY="48.0" text="reservation_id" />
+      <TextField fx:id="ress_id" layoutX="524.0" layoutY="45.0" prefHeight="18.0" prefWidth="70.0" />
+      <TextField fx:id="Room_id" layoutX="307.0" layoutY="43.0" prefHeight="26.0" prefWidth="70.0" />
+      <Label layoutX="24.0" layoutY="49.0" text="hotel_id" />
+      <TextField fx:id="Hotale_id" layoutX="76.0" layoutY="45.0" prefHeight="26.0" prefWidth="77.0" />
+      <TableView fx:id="TableView2" layoutX="263.0" layoutY="241.0" prefHeight="138.0" prefWidth="172.0">
+        <columns>
+           <TableColumn fx:id="idColumn1" prefWidth="52.0" text="room_id" />
+           <TableColumn fx:id="costColumn" prefWidth="52.0" text="cost" />
+           <TableColumn fx:id="availableColumn" prefWidth="71.20001220703125" text="available" />
+        </columns>
+      </TableView>
+      <Button fx:id="ShowRoom" layoutX="302.0" layoutY="394.0" mnemonicParsing="false" onAction="#showRoom" text="Show Rooms">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font></Button>
+      <TableView fx:id="TableView3" layoutX="19.0" layoutY="430.0" prefHeight="138.0" prefWidth="412.0">
+        <columns>
+           <TableColumn fx:id="idColumn3" prefWidth="89.99999618530273" text="reservation_id" />
+           <TableColumn fx:id="hotel_idColumn" prefWidth="92.20001220703125" text="hotel_id" />
+           <TableColumn fx:id="room_idColumn" prefWidth="64.80003356933594" text="room_id" />
+           <TableColumn fx:id="startDay" prefWidth="96.00003051757812" text="startDay" />
+           <TableColumn fx:id="endDaYColumn" minWidth="0.0" prefWidth="64.79998779296875" text="endDaY" />
+        </columns>
+      </TableView>
+      <Button fx:id="ShowResss" layoutX="159.0" layoutY="581.0" mnemonicParsing="false" onAction="#showReservation" text="show Reservations">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font></Button>
+      <TableView fx:id="TableViwe4" layoutX="459.0" layoutY="241.0" prefHeight="327.0" prefWidth="419.0">
+        <columns>
+           <TableColumn fx:id="user_id" prefWidth="54.39996337890625" text="user_id" />
+           <TableColumn fx:id="room_id" prefWidth="68.60003662109375" text="room_id" />
+           <TableColumn fx:id="hotel_id" prefWidth="61.20001220703125" text="hotel_id" />
+           <TableColumn fx:id="first_name" prefWidth="63.5999755859375" text="first_name" />
+           <TableColumn fx:id="last_name" minWidth="0.0" prefWidth="64.4000244140625" text="last_name" />
+           <TableColumn fx:id="phone" prefWidth="51.0" text="phone" />
+           <TableColumn fx:id="country" minWidth="0.0" prefWidth="54.4000244140625" text="country" />
+        </columns>
+      </TableView>
+      <Button fx:id="users" layoutX="645.0" layoutY="581.0" mnemonicParsing="false" onAction="#users" text="Show All Users">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font></Button>
+      <TextField fx:id="RoomsResrrvedtext" layoutX="799.0" layoutY="75.0" prefHeight="34.0" prefWidth="150.0" />
+      <TextField fx:id="RoomsnotResrrvedtext" layoutX="799.0" layoutY="124.0" prefHeight="34.0" prefWidth="150.0" />
+      <Button fx:id="RoomsResrrved1" layoutX="641.0" layoutY="75.0" mnemonicParsing="false" onAction="#roomsResrrved" prefHeight="34.0" prefWidth="150.0" text="Rooms Resrrved">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font></Button>
+      <Button fx:id="RoomsnotResrrved1" layoutX="641.0" layoutY="124.0" mnemonicParsing="false" onAction="#roomsnotResrrved" prefHeight="34.0" prefWidth="150.0" text="Rooms not Resrrved">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font></Button>
+      <Button fx:id="homepage" layoutX="903.0" layoutY="580.0" mnemonicParsing="false" onAction="#homepage" prefHeight="26.0" prefWidth="123.0" text="Back to Home Page">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="633.0" prefWidth="485.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hotel.LoginPageController">
+    <children>
+        <Label layoutX="143.0" layoutY="136.0" prefHeight="76.0" prefWidth="241.0" text="Login Page" textFill="#5a5970">
+            <font>
+                <Font name="Ink Free" size="43.0" />
+            </font>
+        </Label>
+        <Label layoutX="83.0" layoutY="255.0" prefHeight="35.0" prefWidth="98.0" text="username" textFill="#201f1f">
+            <font>
+                <Font name="Ink Free" size="22.0" />
+            </font>
+        </Label>
+        <Label layoutX="84.0" layoutY="296.0" text="password" textFill="#282727">
+            <font>
+                <Font name="Ink Free" size="24.0" />
+            </font>
+        </Label>
+        <TextField fx:id="username" layoutX="213.0" layoutY="255.0" prefHeight="32.0" prefWidth="175.0" />
+        <TextField fx:id="password" layoutX="213.0" layoutY="300.0" prefHeight="32.0" prefWidth="175.0" />
+        <Button fx:id="loginButton" layoutX="288.0" layoutY="432.0" mnemonicParsing="false" onAction="#onButtonClicked" prefHeight="51.0" prefWidth="122.0" text="Login">
+            <font>
+                <Font name="Ink Free" size="24.0" />
+            </font>
+        </Button>
+        <ComboBox fx:id="comp" cache="true" editable="true" layoutX="234.0" layoutY="360.0" prefWidth="150.0" value="admin">
+
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="user" />
+                    <String fx:value="admin" />
+                </FXCollections>
+            </items>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+
+        </ComboBox>
+      <Button fx:id="signButton" layoutX="121.0" layoutY="432.0" mnemonicParsing="false" onAction="#gotosignPage" prefHeight="51.0" prefWidth="121.0" text="Sign Up">
+         <font>
+            <Font name="Ink Free" size="24.0" />
+         </font></Button>
+      <Button fx:id="exit" layoutX="395.0" layoutY="558.0" mnemonicParsing="false" onAction="#exit" text="Exit">
+         <font>
+            <Font name="Ink Free" size="24.0" />
+         </font></Button>
+      <Label layoutX="46.0" layoutY="71.0" prefHeight="51.0" prefWidth="422.0" text="Welcom to Hotel Reservation System" textFill="#434351">
+         <font>
+            <Font name="Ink Free" size="26.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

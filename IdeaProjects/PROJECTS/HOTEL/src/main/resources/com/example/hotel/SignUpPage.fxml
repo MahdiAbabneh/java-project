@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="451.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hotel.SignUpPageController">
+   <children>
+      <TextField fx:id="name" layoutX="276.0" layoutY="143.0" />
+      <TextField fx:id="password" layoutX="276.0" layoutY="195.0" />
+      <Label layoutX="173.0" layoutY="142.0" text="Name">
+         <font>
+            <Font name="Ink Free" size="18.0" />
+         </font></Label>
+      <Label layoutX="163.0" layoutY="194.0" text="Password">
+         <font>
+            <Font name="Ink Free" size="18.0" />
+         </font></Label>
+      <Button fx:id="ButtonSign" layoutX="371.0" layoutY="265.0" mnemonicParsing="false" onAction="#signUser" text="Sign Up">
+         <font>
+            <Font name="Ink Free" size="18.0" />
+         </font></Button>
+      <Button fx:id="ButtonBack" layoutX="453.0" layoutY="350.0" mnemonicParsing="false" onAction="#goBack" text="Back to Login">
+         <font>
+            <Font name="Ink Free" size="18.0" />
+         </font></Button>
+      <Button fx:id="ButtonRest" layoutX="280.0" layoutY="265.0" mnemonicParsing="false" onAction="#restField" text="Rest">
+         <font>
+            <Font name="Ink Free" size="18.0" />
+         </font></Button>
+      <Label layoutX="199.0" layoutY="25.0" text="Sign Up Page">
+         <font>
+            <Font name="Ink Free" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="mass" layoutX="463.0" layoutY="274.0" textFill="#04860b">
+         <font>
+            <Font name="Ink Free" size="14.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button layoutX="416.0" layoutY="78.0" mnemonicParsing="false" text="Check DB">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <Label layoutX="83.0" layoutY="82.0" text="DataBase status" />
+      <Label layoutX="232.0" layoutY="82.0" prefHeight="17.0" prefWidth="84.0" text="Label" />
+      <Label layoutX="83.0" layoutY="165.0" text="user name">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label layoutX="83.0" layoutY="210.0" text="password">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="232.0" layoutY="269.0" text="Check" />
+      <Button layoutX="426.0" layoutY="301.0" mnemonicParsing="false" text="Login" />
+      <TextField layoutX="158.0" layoutY="161.0" />
+      <TextField layoutX="158.0" layoutY="206.0" />
+   </children>
+</Pane>
